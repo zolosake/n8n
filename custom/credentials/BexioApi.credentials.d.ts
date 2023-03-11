@@ -9,4 +9,5 @@ export declare class BexioApi implements ICredentialType {
         type: NodePropertyTypes;
         default: string;
     }[];
+
 }
