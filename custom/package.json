@@ -1,0 +1,35 @@
+{
+    "name": "n8n-nodes-bexio",
+    "version": "0.0.1",
+    "description": "n8n node to interact with the bexio API",
+    "keywords": [],
+    "homepage": "https://zolo.dev",
+    "author": {
+        "name": "gourmetseasoningsake",
+        "email": "j@zolo.dev"
+    },
+    "license": "MIT",
+    "private": true,
+    "main": "index.js",
+    "scripts": {},
+    "files": [
+        "dist"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "credentials": [
+            "dist/credentials/Bexio.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/Bexio/Bexio.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.0",
+        "@types/request-promise-native": "^1.0.18",
+        "n8n-core": "^0.158.0",
+        "n8n-workflow": "^0.140.0",
+        "prettier": "^2.8.4",
+        "typescript": "^4.9.5"
+    }
+}
