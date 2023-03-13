@@ -53,6 +53,6 @@ services:
       - NODE_ENV=production
       - WEBHOOK_URL=https://${SUBDOMAIN}.${DOMAIN_NAME}/
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
-      - EXECUTIONS_MODE=queue # NB: also makes n8n run in main process instead of own
+      - EXECUTIONS_MODE=queue
     volumes:
       - ${DATA_FOLDER}/.n8n:/home/node/.n8n
