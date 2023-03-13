@@ -54,5 +54,7 @@ services:
       - WEBHOOK_URL=https://${SUBDOMAIN}.${DOMAIN_NAME}/
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
       - EXECUTIONS_MODE=queue
+      - QUEUE_BULL_REDIS_HOST=${SUBDOMAIN}.${DOMAIN_NAME}
+      - QUEUE_BULL_REDIS_PORT=6379
     volumes:
       - ${DATA_FOLDER}/.n8n:/home/node/.n8n
