@@ -53,5 +53,6 @@ services:
       - NODE_ENV=production
       - WEBHOOK_URL=https://${SUBDOMAIN}.${DOMAIN_NAME}/
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
+      - EXECUTIONS_PROCESS=main
     volumes:
       - ${DATA_FOLDER}/.n8n:/home/node/.n8n
